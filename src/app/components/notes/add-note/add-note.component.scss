@@ -1,0 +1,33 @@
+.add-note{
+    margin: 20px 10px;
+    textarea, input{
+        width: 100%;
+        margin-bottom: 15px;
+        &:focus{
+            outline: none;
+        };
+        padding: 5px 10px;
+    };
+    input[type="text"]{
+        border: 1px solid #FE4066;
+        height: 40px;
+        border-radius: 10px;
+    };
+    textarea{
+        border: 1px solid #696363;
+        height: 60px;
+        border-radius: 10px;
+    };
+    input[type="button"]{
+        background: #FE4066;
+        color: white;
+        width: auto;
+        border: none;
+        border-radius: 10px;
+        width: 100px;
+        padding: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

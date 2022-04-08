@@ -1,0 +1,12 @@
+<h1>My Notes</h1>
+<div class="notes">
+    <p *ngIf="!(notes$ | async)?.length">No notes to show...</p>
+    <ul>
+        <li *ngFor="let note of notes$ | async; let i = index">
+        <p>{{note.title}}</p>
+        <p>{{note.body}}</p>
+        <span><app-delete-note [index]="i"></app-delete-note></span>
+        <hr>
+        </li> 
+    </ul>
+</div>

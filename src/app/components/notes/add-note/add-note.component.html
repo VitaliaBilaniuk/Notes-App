@@ -1,0 +1,14 @@
+<h1>Create A Note</h1>
+<div class="add-note">
+    <form>
+        <div>
+            <input type="text" placeholder="Title" name="Title" [(ngModel)]="note.title" />
+        </div>
+        <div>
+            <textarea placeholder="Description" name="Description" [(ngModel)]="note.body"></textarea> 
+        </div>
+        <div>
+            <input type="button" value="Note" (click)="createNote()">
+        </div>
+    </form>
+</div>
